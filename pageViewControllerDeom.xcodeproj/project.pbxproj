@@ -19,6 +19,11 @@
 		13673AB31971F1EE00A94535 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13673A9B1971F1EE00A94535 /* UIKit.framework */; };
 		13673ABB1971F1EE00A94535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13673AB91971F1EE00A94535 /* InfoPlist.strings */; };
 		13673ABD1971F1EE00A94535 /* pageViewControllerDeomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13673ABC1971F1EE00A94535 /* pageViewControllerDeomTests.m */; };
+		13673ACA1971F21500A94535 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13673AC81971F21500A94535 /* MainViewController.m */; };
+		13673ACB1971F21500A94535 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13673AC91971F21500A94535 /* MainViewController.xib */; };
+		13673ACD1971F22D00A94535 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13673ACC1971F22D00A94535 /* MapKit.framework */; };
+		13673AD11971F42B00A94535 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13673ACF1971F42B00A94535 /* FirstViewController.m */; };
+		13673AD21971F42B00A94535 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13673AD01971F42B00A94535 /* FirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		13673AB81971F1EE00A94535 /* pageViewControllerDeomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pageViewControllerDeomTests-Info.plist"; sourceTree = "<group>"; };
 		13673ABA1971F1EE00A94535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13673ABC1971F1EE00A94535 /* pageViewControllerDeomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pageViewControllerDeomTests.m; sourceTree = "<group>"; };
+		13673AC71971F21500A94535 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		13673AC81971F21500A94535 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		13673AC91971F21500A94535 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		13673ACC1971F22D00A94535 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		13673ACE1971F42B00A94535 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		13673ACF1971F42B00A94535 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		13673AD01971F42B00A94535 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13673ACD1971F22D00A94535 /* MapKit.framework in Frameworks */,
 				13673A9A1971F1EE00A94535 /* CoreGraphics.framework in Frameworks */,
 				13673A9C1971F1EE00A94535 /* UIKit.framework in Frameworks */,
 				13673A981971F1EE00A94535 /* Foundation.framework in Frameworks */,
@@ -96,6 +109,7 @@
 		13673A961971F1EE00A94535 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13673ACC1971F22D00A94535 /* MapKit.framework */,
 				13673A971971F1EE00A94535 /* Foundation.framework */,
 				13673A991971F1EE00A94535 /* CoreGraphics.framework */,
 				13673A9B1971F1EE00A94535 /* UIKit.framework */,
@@ -107,10 +121,14 @@
 		13673A9D1971F1EE00A94535 /* pageViewControllerDeom */ = {
 			isa = PBXGroup;
 			children = (
+				13673AC61971F20100A94535 /* ViewController */,
 				13673AA61971F1EE00A94535 /* AppDelegate.h */,
 				13673AA71971F1EE00A94535 /* AppDelegate.m */,
 				13673AA91971F1EE00A94535 /* Images.xcassets */,
 				13673A9E1971F1EE00A94535 /* Supporting Files */,
+				13673ACE1971F42B00A94535 /* FirstViewController.h */,
+				13673ACF1971F42B00A94535 /* FirstViewController.m */,
+				13673AD01971F42B00A94535 /* FirstViewController.xib */,
 			);
 			path = pageViewControllerDeom;
 			sourceTree = "<group>";
@@ -142,6 +160,16 @@
 				13673AB91971F1EE00A94535 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13673AC61971F20100A94535 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13673AC71971F21500A94535 /* MainViewController.h */,
+				13673AC81971F21500A94535 /* MainViewController.m */,
+				13673AC91971F21500A94535 /* MainViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13673AA21971F1EE00A94535 /* InfoPlist.strings in Resources */,
+				13673ACB1971F21500A94535 /* MainViewController.xib in Resources */,
 				13673AAA1971F1EE00A94535 /* Images.xcassets in Resources */,
+				13673AD21971F42B00A94535 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13673AA81971F1EE00A94535 /* AppDelegate.m in Sources */,
+				13673ACA1971F21500A94535 /* MainViewController.m in Sources */,
 				13673AA41971F1EE00A94535 /* main.m in Sources */,
+				13673AD11971F42B00A94535 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
